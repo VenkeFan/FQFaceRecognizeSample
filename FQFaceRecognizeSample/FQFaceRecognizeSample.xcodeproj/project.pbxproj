@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B9377D701F68DA5900CC06D8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9377D6F1F68DA5900CC06D8 /* main.m */; };
+		B9377D731F68DA5900CC06D8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9377D721F68DA5900CC06D8 /* AppDelegate.m */; };
+		B9377D761F68DA5A00CC06D8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9377D751F68DA5A00CC06D8 /* ViewController.m */; };
+		B9377D791F68DA5A00CC06D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9377D771F68DA5A00CC06D8 /* Main.storyboard */; };
+		B9377D7B1F68DA5A00CC06D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9377D7A1F68DA5A00CC06D8 /* Assets.xcassets */; };
+		B9377D7E1F68DA5A00CC06D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9377D7C1F68DA5A00CC06D8 /* LaunchScreen.storyboard */; };
+		B9377D891F68DA5B00CC06D8 /* FQFaceRecognizeSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9377D881F68DA5B00CC06D8 /* FQFaceRecognizeSampleTests.m */; };
+		B9377D941F68DA5B00CC06D8 /* FQFaceRecognizeSampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9377D931F68DA5B00CC06D8 /* FQFaceRecognizeSampleUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B9377D851F68DA5A00CC06D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B9377D631F68DA5900CC06D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9377D6A1F68DA5900CC06D8;
+			remoteInfo = FQFaceRecognizeSample;
+		};
+		B9377D901F68DA5B00CC06D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B9377D631F68DA5900CC06D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9377D6A1F68DA5900CC06D8;
+			remoteInfo = FQFaceRecognizeSample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B9377D6B1F68DA5900CC06D8 /* FQFaceRecognizeSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FQFaceRecognizeSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9377D6F1F68DA5900CC06D8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B9377D711F68DA5900CC06D8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B9377D721F68DA5900CC06D8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B9377D741F68DA5A00CC06D8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B9377D751F68DA5A00CC06D8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B9377D781F68DA5A00CC06D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B9377D7A1F68DA5A00CC06D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B9377D7D1F68DA5A00CC06D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B9377D7F1F68DA5A00CC06D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9377D841F68DA5A00CC06D8 /* FQFaceRecognizeSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FQFaceRecognizeSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9377D881F68DA5B00CC06D8 /* FQFaceRecognizeSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FQFaceRecognizeSampleTests.m; sourceTree = "<group>"; };
+		B9377D8A1F68DA5B00CC06D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9377D8F1F68DA5B00CC06D8 /* FQFaceRecognizeSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FQFaceRecognizeSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9377D931F68DA5B00CC06D8 /* FQFaceRecognizeSampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FQFaceRecognizeSampleUITests.m; sourceTree = "<group>"; };
+		B9377D951F68DA5B00CC06D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B9377D681F68DA5900CC06D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9377D811F68DA5A00CC06D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9377D8C1F68DA5B00CC06D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B9377D621F68DA5900CC06D8 = {
+			isa = PBXGroup;
+			children = (
+				B9377D6D1F68DA5900CC06D8 /* FQFaceRecognizeSample */,
+				B9377D871F68DA5A00CC06D8 /* FQFaceRecognizeSampleTests */,
+				B9377D921F68DA5B00CC06D8 /* FQFaceRecognizeSampleUITests */,
+				B9377D6C1F68DA5900CC06D8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B9377D6C1F68DA5900CC06D8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B9377D6B1F68DA5900CC06D8 /* FQFaceRecognizeSample.app */,
+				B9377D841F68DA5A00CC06D8 /* FQFaceRecognizeSampleTests.xctest */,
+				B9377D8F1F68DA5B00CC06D8 /* FQFaceRecognizeSampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B9377D6D1F68DA5900CC06D8 /* FQFaceRecognizeSample */ = {
+			isa = PBXGroup;
+			children = (
+				B9377D711F68DA5900CC06D8 /* AppDelegate.h */,
+				B9377D721F68DA5900CC06D8 /* AppDelegate.m */,
+				B9377D741F68DA5A00CC06D8 /* ViewController.h */,
+				B9377D751F68DA5A00CC06D8 /* ViewController.m */,
+				B9377D771F68DA5A00CC06D8 /* Main.storyboard */,
+				B9377D7A1F68DA5A00CC06D8 /* Assets.xcassets */,
+				B9377D7C1F68DA5A00CC06D8 /* LaunchScreen.storyboard */,
+				B9377D7F1F68DA5A00CC06D8 /* Info.plist */,
+				B9377D6E1F68DA5900CC06D8 /* Supporting Files */,
+			);
+			path = FQFaceRecognizeSample;
+			sourceTree = "<group>";
+		};
+		B9377D6E1F68DA5900CC06D8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B9377D6F1F68DA5900CC06D8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B9377D871F68DA5A00CC06D8 /* FQFaceRecognizeSampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				B9377D881F68DA5B00CC06D8 /* FQFaceRecognizeSampleTests.m */,
+				B9377D8A1F68DA5B00CC06D8 /* Info.plist */,
+			);
+			path = FQFaceRecognizeSampleTests;
+			sourceTree = "<group>";
+		};
+		B9377D921F68DA5B00CC06D8 /* FQFaceRecognizeSampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B9377D931F68DA5B00CC06D8 /* FQFaceRecognizeSampleUITests.m */,
+				B9377D951F68DA5B00CC06D8 /* Info.plist */,
+			);
+			path = FQFaceRecognizeSampleUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B9377D6A1F68DA5900CC06D8 /* FQFaceRecognizeSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9377D981F68DA5B00CC06D8 /* Build configuration list for PBXNativeTarget "FQFaceRecognizeSample" */;
+			buildPhases = (
+				B9377D671F68DA5900CC06D8 /* Sources */,
+				B9377D681F68DA5900CC06D8 /* Frameworks */,
+				B9377D691F68DA5900CC06D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FQFaceRecognizeSample;
+			productName = FQFaceRecognizeSample;
+			productReference = B9377D6B1F68DA5900CC06D8 /* FQFaceRecognizeSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B9377D831F68DA5A00CC06D8 /* FQFaceRecognizeSampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9377D9B1F68DA5B00CC06D8 /* Build configuration list for PBXNativeTarget "FQFaceRecognizeSampleTests" */;
+			buildPhases = (
+				B9377D801F68DA5A00CC06D8 /* Sources */,
+				B9377D811F68DA5A00CC06D8 /* Frameworks */,
+				B9377D821F68DA5A00CC06D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B9377D861F68DA5A00CC06D8 /* PBXTargetDependency */,
+			);
+			name = FQFaceRecognizeSampleTests;
+			productName = FQFaceRecognizeSampleTests;
+			productReference = B9377D841F68DA5A00CC06D8 /* FQFaceRecognizeSampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B9377D8E1F68DA5B00CC06D8 /* FQFaceRecognizeSampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9377D9E1F68DA5B00CC06D8 /* Build configuration list for PBXNativeTarget "FQFaceRecognizeSampleUITests" */;
+			buildPhases = (
+				B9377D8B1F68DA5B00CC06D8 /* Sources */,
+				B9377D8C1F68DA5B00CC06D8 /* Frameworks */,
+				B9377D8D1F68DA5B00CC06D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B9377D911F68DA5B00CC06D8 /* PBXTargetDependency */,
+			);
+			name = FQFaceRecognizeSampleUITests;
+			productName = FQFaceRecognizeSampleUITests;
+			productReference = B9377D8F1F68DA5B00CC06D8 /* FQFaceRecognizeSampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B9377D631F68DA5900CC06D8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = fanqi;
+				TargetAttributes = {
+					B9377D6A1F68DA5900CC06D8 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = V6R68WLKP9;
+						ProvisioningStyle = Automatic;
+					};
+					B9377D831F68DA5A00CC06D8 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = V6R68WLKP9;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B9377D6A1F68DA5900CC06D8;
+					};
+					B9377D8E1F68DA5B00CC06D8 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = V6R68WLKP9;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B9377D6A1F68DA5900CC06D8;
+					};
+				};
+			};
+			buildConfigurationList = B9377D661F68DA5900CC06D8 /* Build configuration list for PBXProject "FQFaceRecognizeSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B9377D621F68DA5900CC06D8;
+			productRefGroup = B9377D6C1F68DA5900CC06D8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B9377D6A1F68DA5900CC06D8 /* FQFaceRecognizeSample */,
+				B9377D831F68DA5A00CC06D8 /* FQFaceRecognizeSampleTests */,
+				B9377D8E1F68DA5B00CC06D8 /* FQFaceRecognizeSampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B9377D691F68DA5900CC06D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9377D7E1F68DA5A00CC06D8 /* LaunchScreen.storyboard in Resources */,
+				B9377D7B1F68DA5A00CC06D8 /* Assets.xcassets in Resources */,
+				B9377D791F68DA5A00CC06D8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9377D821F68DA5A00CC06D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9377D8D1F68DA5B00CC06D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B9377D671F68DA5900CC06D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9377D761F68DA5A00CC06D8 /* ViewController.m in Sources */,
+				B9377D731F68DA5900CC06D8 /* AppDelegate.m in Sources */,
+				B9377D701F68DA5900CC06D8 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9377D801F68DA5A00CC06D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9377D891F68DA5B00CC06D8 /* FQFaceRecognizeSampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9377D8B1F68DA5B00CC06D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9377D941F68DA5B00CC06D8 /* FQFaceRecognizeSampleUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B9377D861F68DA5A00CC06D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B9377D6A1F68DA5900CC06D8 /* FQFaceRecognizeSample */;
+			targetProxy = B9377D851F68DA5A00CC06D8 /* PBXContainerItemProxy */;
+		};
+		B9377D911F68DA5B00CC06D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B9377D6A1F68DA5900CC06D8 /* FQFaceRecognizeSample */;
+			targetProxy = B9377D901F68DA5B00CC06D8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B9377D771F68DA5A00CC06D8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9377D781F68DA5A00CC06D8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B9377D7C1F68DA5A00CC06D8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9377D7D1F68DA5A00CC06D8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B9377D961F68DA5B00CC06D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B9377D971F68DA5B00CC06D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B9377D991F68DA5B00CC06D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V6R68WLKP9;
+				INFOPLIST_FILE = FQFaceRecognizeSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = qi.fan.FQFaceRecognizeSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B9377D9A1F68DA5B00CC06D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V6R68WLKP9;
+				INFOPLIST_FILE = FQFaceRecognizeSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = qi.fan.FQFaceRecognizeSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B9377D9C1F68DA5B00CC06D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = V6R68WLKP9;
+				INFOPLIST_FILE = FQFaceRecognizeSampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = qi.fan.FQFaceRecognizeSampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FQFaceRecognizeSample.app/FQFaceRecognizeSample";
+			};
+			name = Debug;
+		};
+		B9377D9D1F68DA5B00CC06D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = V6R68WLKP9;
+				INFOPLIST_FILE = FQFaceRecognizeSampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = qi.fan.FQFaceRecognizeSampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FQFaceRecognizeSample.app/FQFaceRecognizeSample";
+			};
+			name = Release;
+		};
+		B9377D9F1F68DA5B00CC06D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = V6R68WLKP9;
+				INFOPLIST_FILE = FQFaceRecognizeSampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = qi.fan.FQFaceRecognizeSampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FQFaceRecognizeSample;
+			};
+			name = Debug;
+		};
+		B9377DA01F68DA5B00CC06D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = V6R68WLKP9;
+				INFOPLIST_FILE = FQFaceRecognizeSampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = qi.fan.FQFaceRecognizeSampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FQFaceRecognizeSample;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B9377D661F68DA5900CC06D8 /* Build configuration list for PBXProject "FQFaceRecognizeSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9377D961F68DA5B00CC06D8 /* Debug */,
+				B9377D971F68DA5B00CC06D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9377D981F68DA5B00CC06D8 /* Build configuration list for PBXNativeTarget "FQFaceRecognizeSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9377D991F68DA5B00CC06D8 /* Debug */,
+				B9377D9A1F68DA5B00CC06D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B9377D9B1F68DA5B00CC06D8 /* Build configuration list for PBXNativeTarget "FQFaceRecognizeSampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9377D9C1F68DA5B00CC06D8 /* Debug */,
+				B9377D9D1F68DA5B00CC06D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B9377D9E1F68DA5B00CC06D8 /* Build configuration list for PBXNativeTarget "FQFaceRecognizeSampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9377D9F1F68DA5B00CC06D8 /* Debug */,
+				B9377DA01F68DA5B00CC06D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B9377D631F68DA5900CC06D8 /* Project object */;
+}
