@@ -84,7 +84,6 @@
         CGAffineTransform transform = CGAffineTransformMakeScale(1, -1);
         transform = CGAffineTransformTranslate(transform, 0, -ciImgSize.height);
         
-        // 坐标转换
         CGRect faceFrame = CGRectApplyAffineTransform(faceOriginalFrame, transform);
         
         // 按显示区域的宽高的比率缩放
