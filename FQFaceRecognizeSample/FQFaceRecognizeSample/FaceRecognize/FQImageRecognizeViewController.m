@@ -24,7 +24,7 @@
     [self layoutUI];
     
     {
-        UIImage *img = [UIImage imageNamed:@"3.jpg"];
+        UIImage *img = [UIImage imageNamed:@"1.jpg"];
         self.previewLayer.contents = (__bridge id)img.CGImage;
         [self startRecognize:img];
     }
@@ -78,6 +78,7 @@
         
         // 人脸在原始图片中的位置
         CGRect faceOriginalFrame = feature.bounds;
+        NSLog(@"人脸原始坐标: %f,%f,%f,%f",faceOriginalFrame.origin.x,faceOriginalFrame.origin.y,faceOriginalFrame.size.width,faceOriginalFrame.size.height);
         
         // UIView 和 CoreImage 坐标转换
         CGSize ciImgSize = ciImg.extent.size;
@@ -85,6 +86,7 @@
         transform = CGAffineTransformTranslate(transform, 0, -ciImgSize.height);
         
         CGRect faceFrame = CGRectApplyAffineTransform(faceOriginalFrame, transform);
+        NSLog(@"人脸转换坐标: %f,%f,%f,%f",faceFrame.origin.x,faceFrame.origin.y,faceFrame.size.width,faceFrame.size.height);
         
         // 按显示区域的宽高的比率缩放
         CGSize displaySize = self.previewLayer.frame.size;
@@ -96,7 +98,7 @@
         CGFloat offsetY = (displaySize.height - ciImgSize.height * scale) / 2;
         faceFrame.origin.x += offsetX;
         faceFrame.origin.y += offsetY;
-        
+        NSLog(@"人脸容器坐标: %f,%f,%f,%f",faceFrame.origin.x,faceFrame.origin.y,faceFrame.size.width,faceFrame.size.height);
        
         {
             // 画人脸方框

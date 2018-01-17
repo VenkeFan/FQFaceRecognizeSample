@@ -487,7 +487,7 @@
 				TargetAttributes = {
 					B9377D6A1F68DA5900CC06D8 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = V6R68WLKP9;
+						DevelopmentTeam = 6S8JU9P6FT;
 						ProvisioningStyle = Automatic;
 					};
 					B9377D831F68DA5A00CC06D8 = {
@@ -793,7 +793,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = V6R68WLKP9;
+				DEVELOPMENT_TEAM = 6S8JU9P6FT;
 				INFOPLIST_FILE = FQFaceRecognizeSample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -806,7 +806,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = V6R68WLKP9;
+				DEVELOPMENT_TEAM = 6S8JU9P6FT;
 				INFOPLIST_FILE = FQFaceRecognizeSample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
