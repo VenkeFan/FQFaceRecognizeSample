@@ -88,8 +88,8 @@
     // 捕获会话
     _session = [[AVCaptureSession alloc] init];
     
-    if ([_session canSetSessionPreset:AVCaptureSessionPresetHigh]) {
-        [_session setSessionPreset:AVCaptureSessionPresetHigh];
+    if ([_session canSetSessionPreset:AVCaptureSessionPresetMedium]) {
+        [_session setSessionPreset:AVCaptureSessionPresetMedium];
     }
     
     if ([_session canAddInput:_deviceInput]) {
@@ -120,6 +120,8 @@
         [EAGLContext setCurrentContext:glContext];
 
         _glkView = [[GLKView alloc] initWithFrame:self.view.bounds context:glContext];
+//        _glkView.layer.contentsGravity = kCAGravityResizeAspectFill;
+        _glkView.contentMode = UIViewContentModeScaleAspectFill;
         _glkView.drawableColorFormat = GLKViewDrawableColorFormatRGBA8888;
         [self.view addSubview:_glkView];
 
@@ -144,7 +146,7 @@
         _baseEffect.useConstantColor = GL_TRUE;
         _baseEffect.constantColor = GLKVector4Make(1.0, 0.0, 0.0, 1.0);
 #endif
-
+        
         glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
     }
     
