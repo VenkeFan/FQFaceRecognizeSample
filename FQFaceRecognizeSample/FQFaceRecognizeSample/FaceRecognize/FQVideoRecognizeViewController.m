@@ -13,6 +13,7 @@
 #define kSizeScale(size)        (size * (kScreenWidth / 375.0))
 #define BtnWidth                ([UIScreen mainScreen].bounds.size.width / 3)
 #define BtnHeight               50
+#define IsVideoPreviewRender    1
 #define IsDrawTexture           0
 
 @interface FQVideoRecognizeViewController () <AVCaptureVideoDataOutputSampleBufferDelegate> {
@@ -88,8 +89,8 @@
     // 捕获会话
     _session = [[AVCaptureSession alloc] init];
     
-    if ([_session canSetSessionPreset:AVCaptureSessionPresetMedium]) {
-        [_session setSessionPreset:AVCaptureSessionPresetMedium];
+    if ([_session canSetSessionPreset:AVCaptureSessionPresetHigh]) {
+        [_session setSessionPreset:AVCaptureSessionPresetHigh];
     }
     
     if ([_session canAddInput:_deviceInput]) {
@@ -105,15 +106,14 @@
     if ([_session canAddOutput:_output]) {
         [_session addOutput:_output];
     }
-    
+#if IsVideoPreviewRender
     {
 //        // 默认预览层
-//        _previewLayer = [AVCaptureVideoPreviewLayer layerWithSession:_session];
-//        _previewLayer.frame = self.view.bounds;
-//        [self.view.layer addSublayer:_previewLayer];
+        _previewLayer = [AVCaptureVideoPreviewLayer layerWithSession:_session];
+        _previewLayer.frame = self.view.bounds;
+        [self.view.layer addSublayer:_previewLayer];
     }
-    
-    
+#else
     {
         // 使用OpenGL绘制
         EAGLContext *glContext = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
@@ -146,10 +146,10 @@
         _baseEffect.useConstantColor = GL_TRUE;
         _baseEffect.constantColor = GLKVector4Make(1.0, 0.0, 0.0, 1.0);
 #endif
-        
+
         glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
     }
-    
+#endif
     
     NSDictionary *detectorOptions = [[NSDictionary alloc] initWithObjectsAndKeys:CIDetectorAccuracyLow, CIDetectorAccuracy, nil];
     _detector = [CIDetector detectorOfType:CIDetectorTypeFace context:nil options:detectorOptions];
@@ -211,24 +211,25 @@
         faceFrame.origin.x += offsetX;
         faceFrame.origin.y += offsetY;
         NSLog(@"人脸容器坐标: %f,%f,%f,%f",faceFrame.origin.x,faceFrame.origin.y,faceFrame.size.width,faceFrame.size.height);
-        
+#if IsVideoPreviewRender
         {
             // 测试UIView 和 CoreImage 坐标转换是否正确
-//            UIBezierPath *path = [UIBezierPath bezierPathWithRect:faceFrame];
-//
-//            CAShapeLayer *shapeLayer = [CAShapeLayer layer];
-//            shapeLayer.fillColor = [UIColor clearColor].CGColor;
-//            shapeLayer.strokeColor = [UIColor redColor].CGColor;
-//            shapeLayer.lineWidth = 1;
-//            shapeLayer.path = path.CGPath;
-//            for (CALayer *layer in [UIApplication sharedApplication].keyWindow.layer.sublayers) {
-//                if ([layer isKindOfClass:[CAShapeLayer class]]) {
-//                    [layer removeFromSuperlayer];
-//                }
-//            }
-//            [[UIApplication sharedApplication].keyWindow.layer addSublayer:shapeLayer];
+            UIBezierPath *path = [UIBezierPath bezierPathWithRect:faceFrame];
+
+            CAShapeLayer *shapeLayer = [CAShapeLayer layer];
+            shapeLayer.fillColor = [UIColor clearColor].CGColor;
+            shapeLayer.strokeColor = [UIColor redColor].CGColor;
+            shapeLayer.lineWidth = 1;
+            shapeLayer.path = path.CGPath;
+            for (CALayer *layer in _previewLayer.sublayers) {
+                if ([layer isKindOfClass:[CAShapeLayer class]]) {
+                    [layer removeFromSuperlayer];
+                }
+            }
+            [_previewLayer addSublayer:shapeLayer];
+            continue;
         }
-        
+#endif
         [_baseEffect prepareToDraw];
         
         // 把人脸坐标转换成OpenGL坐标
