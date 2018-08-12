@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "FQImageRecognizeViewController.h"
 #import "FQVideoRecognizeViewController.h"
+#import "FQOpencvRecognizeViewController.h"
 
 NSString * const ReuseID = @"TableViewCell";
 
@@ -55,6 +56,9 @@ NSString * const ReuseID = @"TableViewCell";
     } else if (indexPath.row == 1) {
         FQVideoRecognizeViewController *ctr = [[FQVideoRecognizeViewController alloc] init];
         [self.navigationController pushViewController:ctr animated:YES];
+    } else {
+        FQOpencvRecognizeViewController *ctr = [[FQOpencvRecognizeViewController alloc] init];
+        [self.navigationController pushViewController:ctr animated:YES];
     }
 }
 
@@ -76,7 +80,7 @@ NSString * const ReuseID = @"TableViewCell";
 
 - (NSArray *)dataArray {
     if (!_dataArray) {
-        _dataArray = @[@"图片", @"视频"];
+        _dataArray = @[@"图片", @"视频", @"opencv"];
     }
     return _dataArray;
 }

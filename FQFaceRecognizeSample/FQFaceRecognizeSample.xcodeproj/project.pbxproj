@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B9064D41211D85A100CA554A /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9064D40211D85A100CA554A /* opencv2.framework */; };
+		B9064D44211D873600CA554A /* FQOpencvRecognizeViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = B9064D43211D873600CA554A /* FQOpencvRecognizeViewController.mm */; };
+		B9065274211E83C800CA554A /* shape_predictor_68_face_landmarks.dat in Resources */ = {isa = PBXBuildFile; fileRef = B9064D4A211E83BF00CA554A /* shape_predictor_68_face_landmarks.dat */; };
+		B90653AE211E83C800CA554A /* libdlib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9065273211E83C700CA554A /* libdlib.a */; };
+		B90653B1211E858500CA554A /* FQFacePointWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = B90653B0211E858500CA554A /* FQFacePointWrapper.mm */; };
+		B9065A18211E8CAC00CA554A /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B90653B3211E85B700CA554A /* Accelerate.framework */; };
+		B9065A19211E8CB200CA554A /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B90653B5211E85C000CA554A /* AssetsLibrary.framework */; };
 		B9377D701F68DA5900CC06D8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9377D6F1F68DA5900CC06D8 /* main.m */; };
 		B9377D731F68DA5900CC06D8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9377D721F68DA5900CC06D8 /* AppDelegate.m */; };
 		B9377D761F68DA5A00CC06D8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9377D751F68DA5A00CC06D8 /* ViewController.m */; };
@@ -121,6 +128,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B9064D40211D85A100CA554A /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		B9064D42211D873600CA554A /* FQOpencvRecognizeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FQOpencvRecognizeViewController.h; sourceTree = "<group>"; };
+		B9064D43211D873600CA554A /* FQOpencvRecognizeViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = FQOpencvRecognizeViewController.mm; sourceTree = "<group>"; };
+		B9064D45211D986800CA554A /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		B9064D4A211E83BF00CA554A /* shape_predictor_68_face_landmarks.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = shape_predictor_68_face_landmarks.dat; sourceTree = "<group>"; };
+		B9065273211E83C700CA554A /* libdlib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libdlib.a; sourceTree = "<group>"; };
+		B90653AF211E858500CA554A /* FQFacePointWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FQFacePointWrapper.h; sourceTree = "<group>"; };
+		B90653B0211E858500CA554A /* FQFacePointWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = FQFacePointWrapper.mm; sourceTree = "<group>"; };
+		B90653B3211E85B700CA554A /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		B90653B5211E85C000CA554A /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		B9377D6B1F68DA5900CC06D8 /* FQFaceRecognizeSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FQFaceRecognizeSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9377D6F1F68DA5900CC06D8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B9377D711F68DA5900CC06D8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -233,6 +250,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9065A19211E8CB200CA554A /* AssetsLibrary.framework in Frameworks */,
+				B9065A18211E8CAC00CA554A /* Accelerate.framework in Frameworks */,
+				B90653AE211E83C800CA554A /* libdlib.a in Frameworks */,
+				B9064D41211D85A100CA554A /* opencv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +274,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B9064D3F211D85A100CA554A /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				B9065273211E83C700CA554A /* libdlib.a */,
+				B9064D4A211E83BF00CA554A /* shape_predictor_68_face_landmarks.dat */,
+				B9064D40211D85A100CA554A /* opencv2.framework */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		B90653B2211E85B700CA554A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B90653B5211E85C000CA554A /* AssetsLibrary.framework */,
+				B90653B3211E85B700CA554A /* Accelerate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B9377D621F68DA5900CC06D8 = {
 			isa = PBXGroup;
 			children = (
@@ -260,6 +300,7 @@
 				B9377D871F68DA5A00CC06D8 /* FQFaceRecognizeSampleTests */,
 				B9377D921F68DA5B00CC06D8 /* FQFaceRecognizeSampleUITests */,
 				B9377D6C1F68DA5900CC06D8 /* Products */,
+				B90653B2211E85B700CA554A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -276,6 +317,7 @@
 		B9377D6D1F68DA5900CC06D8 /* FQFaceRecognizeSample */ = {
 			isa = PBXGroup;
 			children = (
+				B9064D3F211D85A100CA554A /* Vendor */,
 				B9A023F81FFF4C6C001A037B /* Resources */,
 				B9377DB31F6920D900CC06D8 /* 1.jpg */,
 				B9377DB41F6920D900CC06D8 /* 3.jpg */,
@@ -300,6 +342,7 @@
 			isa = PBXGroup;
 			children = (
 				B9377D6F1F68DA5900CC06D8 /* main.m */,
+				B9064D45211D986800CA554A /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -329,6 +372,10 @@
 				B9377DA31F68E0C000CC06D8 /* FQImageRecognizeViewController.m */,
 				B9377DAE1F691B7F00CC06D8 /* FQVideoRecognizeViewController.h */,
 				B9377DAF1F691B7F00CC06D8 /* FQVideoRecognizeViewController.m */,
+				B9064D42211D873600CA554A /* FQOpencvRecognizeViewController.h */,
+				B9064D43211D873600CA554A /* FQOpencvRecognizeViewController.mm */,
+				B90653AF211E858500CA554A /* FQFacePointWrapper.h */,
+				B90653B0211E858500CA554A /* FQFacePointWrapper.mm */,
 			);
 			path = FaceRecognize;
 			sourceTree = "<group>";
@@ -615,6 +662,7 @@
 				B9A024721FFF4C6D001A037B /* ear_46.png in Resources */,
 				B9A024881FFF4C6D001A037B /* ear_66.png in Resources */,
 				B9377DB51F6920D900CC06D8 /* 1.jpg in Resources */,
+				B9065274211E83C800CA554A /* shape_predictor_68_face_landmarks.dat in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -639,12 +687,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B90653B1211E858500CA554A /* FQFacePointWrapper.mm in Sources */,
 				B9377DA71F68EFB400CC06D8 /* UIImage+Extension.m in Sources */,
 				B9377DA41F68E0C000CC06D8 /* FQImageRecognizeViewController.m in Sources */,
 				B9377D761F68DA5A00CC06D8 /* ViewController.m in Sources */,
 				B9377D731F68DA5900CC06D8 /* AppDelegate.m in Sources */,
 				B9377DB01F691B7F00CC06D8 /* FQVideoRecognizeViewController.m in Sources */,
 				B9377D701F68DA5900CC06D8 /* main.m in Sources */,
+				B9064D44211D873600CA554A /* FQOpencvRecognizeViewController.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -793,12 +843,31 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "libc++";
 				DEVELOPMENT_TEAM = V6R68WLKP9;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FQFaceRecognizeSample/Vendor",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					DLIB_JPEG_SUPPORT,
+					DLIB_NO_GUI_SUPPORT,
+					NDEBUG,
+					DDLIB_USE_BLAS,
+					DLIB_USE_LAPACK,
+				);
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/FQFaceRecognizeSample/Vendor\"";
 				INFOPLIST_FILE = FQFaceRecognizeSample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FQFaceRecognizeSample/Vendor",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = qi.fan.FQFaceRecognizeSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				WARNING_CFLAGS = "-Wno-documentation";
 			};
 			name = Debug;
 		};
@@ -806,12 +875,31 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "libc++";
 				DEVELOPMENT_TEAM = V6R68WLKP9;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FQFaceRecognizeSample/Vendor",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					DLIB_JPEG_SUPPORT,
+					DLIB_NO_GUI_SUPPORT,
+					NDEBUG,
+					DDLIB_USE_BLAS,
+					DLIB_USE_LAPACK,
+				);
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/FQFaceRecognizeSample/Vendor\"";
 				INFOPLIST_FILE = FQFaceRecognizeSample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FQFaceRecognizeSample/Vendor",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = qi.fan.FQFaceRecognizeSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				WARNING_CFLAGS = "-Wno-documentation";
 			};
 			name = Release;
 		};
